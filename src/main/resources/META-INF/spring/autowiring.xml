@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<description>Example configuration to get you started.</description>
+	<bean id="foo" class="org.yq.spring.ch4.autowiring.Foo" />
+	<bean id="bar1" class="org.yq.spring.ch4.autowiring.Bar" />
+	<bean id="targetByName" class="org.yq.spring.ch4.autowiring.Target"
+		autowire="byName" lazy-init="true" />
+	<bean id="targetByType" class="org.yq.spring.ch4.autowiring.Target"
+		autowire="byType" lazy-init="true" />
+	<bean id="targetConstructor" class="org.yq.spring.ch4.autowiring.Target"
+		autowire="constructor" lazy-init="true" />
+
+</beans>
