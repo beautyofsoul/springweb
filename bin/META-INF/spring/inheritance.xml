@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<description>Example configuration to get you started.</description>
+	<bean id="inheritParent" class="org.yq.spring.ch4.inheritance.SimpleBean">
+		<property name="name">
+			<value>Crarance Ho</value>
+		</property>
+		<property name="age">
+			<value>22</value>
+		</property>
+	</bean>
+	<bean id="inheritChild" class="org.yq.spring.ch4.inheritance.SimpleBean"
+		parent="inheritParent">
+		<property name="age">
+			<value>36</value>
+		</property>
+	</bean>
+
+
+
+</beans>
