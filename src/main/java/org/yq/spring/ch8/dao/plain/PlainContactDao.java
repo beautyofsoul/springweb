@@ -64,4 +64,22 @@ public class PlainContactDao implements ContactDao {
 		return result;
 	}
 
+	@Override
+	public String findFirstNameById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String findLastNameById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void insert(Contact contact) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

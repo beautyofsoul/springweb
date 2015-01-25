@@ -8,5 +8,9 @@ public interface ContactDao {
 
 	public List<Contact> findAll();
 	
+	public String findFirstNameById(Long id);
 	
+	public String findLastNameById(Long id);
+	
+	public void insert(Contact contact);
 }
